@@ -1,2 +1,4 @@
-YouTube URL,Artist Name,Song Name,File Name,Desired Directory
-https://www.youtube.com/watch?v=eVCM0ERIBAI,Juju Dreadhead,Sza The Weekend (Jersey club Version),The Weekend (Jersey Club Version),/Users/garges/Desktop/Github/Youtube-DL-CSV/Playlists
+YouTube URL,File Name,Desired Directory
+https://www.youtube.com/watch?v=eVCM0ERIBAI,The Weekend (Jersey Club Version),/Users/garges/Desktop/Github/Youtube-DL-CSV/Playlists/Test_Playlists
+https://www.youtube.com/watch?v=Kg0GKmg-hJM,Baby I (Frankie Knuckles Directors Cut Remix),/Users/garges/Desktop/Github/Youtube-DL-CSV/Playlists/Test_Playlists
+https://www.youtube.com/watch?v=teiM7RI52x8,Good People (Director's Cut Signature Mix),/Users/garges/Desktop/Github/Youtube-DL-CSV/Playlists/Test_Playlists
