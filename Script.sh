@@ -1,13 +1,21 @@
 #!/bin/bash
+set -x 
 echo Thank You for Using My Youtube-dl tool!
 
 #echo "The name of the File is $1";
 #echo "The name of the File is ${FILE}";
+#f1 is the URL
+#f2 is the Song Title
+#f3 is the path
 
 while IFS="," read f1 f2 f3
 do
-	youtube-dl -f 140 --output "${f3}/${f2}" "$f1"
-	#ffmpeg -i "${f3}/${f2}.m4a" -c:a libmp3lame -q:a 8 output.mp3
+	echo Reading Entree...
+	f3=$(echo $f3|tr -d '\r')
+	echo Downloading "${f1}" from Youtube...
+	youtube-dl -f 140 --output "${f3}/${f2}" "${f1}"
+	echo Converting to mp3 Format...
+	ffmpeg -i "${f3}/${f2}" -c:a libmp3lame -q:a 8 "${f3}/${f2}".mp3
 
 done < $1 
 
