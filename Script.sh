@@ -13,9 +13,9 @@ do
 	echo Reading Entree...
 	f3=$(echo $f3|tr -d '\r')
 	echo Downloading "${f1}" from Youtube...
-	youtube-dl -f 140 --output "${f3}/${f2}" "${f1}"
+	youtube-dl -f 140 --output "${f3}/${f2}" "${f1}" &>/dev/null
 	echo Converting to mp3 Format...
-	ffmpeg -i "${f3}/${f2}" -c:a libmp3lame -q:a 8 "${f3}/${f2}".mp3
+	#ffmpeg -i "${f3}/${f2}" -c:a libmp3lame -q:a 8 "${f3}/${f2}".mp3
 
 done < $1 
 
