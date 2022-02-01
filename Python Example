@@ -1,0 +1,43 @@
+https://www.reddit.com/r/youtubedl/comments/s8yslh/how_to_change_youtube_dl_output_location_with/
+
+I wrote a python script to download a list of YouTube URLs, and I want to change the output folder by the subject I'm downlaoding.
+
+For example, When I'm downloading a playlist, I want the videos in this playlist be downloaded into a folder named by the current playlist. But if it's a channel, the videos inside it should go into a folder named by it's uploader.
+
+How do I know the URL I'm downloading is a playlist or a channel? Since the options are passed before the download starts, I can't find a way to do this.
+
+Here is my code:
+
+
+import sys
+import yt_dlp
+
+URLS = [
+  'playlist_url',
+  'channel_url',
+]
+
+dl_ops = {
+  'outtmpl': 'd:/YouTube/%(uploader)s/%(title)s.%(ext)s'
+}
+
+retry_count = 0
+
+def download_video(urls):
+  try:
+    with yt_dlp.YoutubeDL(dl_ops) as ydl:
+      ydl.download(urls)
+  except KeyboardInterrupt:
+    print('Interruptted by user')
+    sys.exit()
+  except Exception as e:
+    print(e)
+    global retry_count
+    if retry_count == 50:
+      print('Retry count exceeded')
+      sys.exit()
+    retry_count += 1
+    download_video(urls)
+
+if __name__ == '__main__':
+  download_video(URLS)
