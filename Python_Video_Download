@@ -1,0 +1,132 @@
+#!/usr/bin/env python3
+import sys
+import yt_dlp
+
+URLS = [
+  # Italo Disco
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzmmAVpk4xOvf6n87bBE3xYx',
+  # Belgian Rave and Newbeat
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznzk8CkjPhhzFCKBQJ5ZiUu',
+  # Euro Disco
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzl8RopQ4bIrDWGvE-HL_nzZ',
+  # 90's House   80's House   Disco Mix Party Jams
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznUNE7EN1wML85lfxO_RpPv',
+  # Uplifting House
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznGLhwvY81rubvxXRHFBYnU',
+  # Goa Way
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzl1yQyxbFsbvVlIU0tYh2TS',
+  # Psytrance Supernova
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzkG62lNVgSWWlng-2Z7Wk_0',
+  # Liquid Drum N Bass
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlOvd5Rj6TOm19o85pnurTj',
+  # Octo Octa DnB
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzmjTk35VTI2HEkUZn5jN62F',
+  # dancin
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzk9JSySN8_n9dAjnDCyIxgS',
+  # Trance: My Guilty Pleasure
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznzbybmeZo2GbusntazIHD0',
+  # Acid Is The Answer
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzkA1uKdqSPZneArAKg18QbH',
+  # Four Tete
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzmTRrHkQfDdSEg0uoj8YM7i',
+  # Superdiscoteca
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzm8Q-mzI_N7WMAt55Bjol4N',
+  # DTONER
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzkw-s_4pbwCdiyreeZdUbHQ',
+  # Dub Techno
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzn_4cx8hWXQKDFsBVeIN-GW',
+  # Russel Discwoman
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznVjTAwI4oVF8YpEcqJrI6j',
+  # Daft Punk 1997
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzle4gXTWWcJ_CKbGC9IOQoa',
+  # Ellen Allien & Dr. Rubinstein
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzk6A9bulWUOO0xUadl_gBar',
+  # Jeff Mills Relentless
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznyJ9KMpwnxs_UAyXnUgW1M',
+  # RIP Frankie Knuckles
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlGzpL8B337F4lRQttvcoP6',
+  # You've Got Some Splaining to Do
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznqlgJT-bFTU6TDYEHKVUJd',
+  # SPF
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlYl9npjubpbS5h73Zv7Orf',
+  # Bored Lord
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlW4Zbd9Ha1f2L5uQ77Qrsn',
+  # DJ Hodor
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlhLtX9-lp1_8ldmMh2vpbh',
+  # Connor
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzk0MHH-I2D-kdS8ioRQWdhx',
+  # Richie Hawtin
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzknlTa-JXIVZPcfrHBT3jZc',
+  # Blind Techno
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzmU8ImkaFbVE02lMWNPh20T',
+  # RIP K-Hand
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlGOpqUADgldpNchZXdPtb6',
+  # A Forest Rave Bday Party (Funky Rave)
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzngHapf6TDKmIw7hF8BAUOS',
+  # Sunrise Techno
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzleLJExYJ47aTUGeZF0yXsz',
+  # Nina Kraviz B2B Helena Hauff
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzkK7IKptI-ZBmjtL1v1uNVk',
+  # Andrew Weatherall 1996
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznNNPzD5RhMoaa3or85bGnf',
+  # Tenerife Memories
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzl9OazU6V6gilhM8UORMRKO',
+  # DOJRADIO
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzmkg57LMQazMuCIGqzpUGoz',
+  # House of God 1997
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznNqfJmNK2njz_6bttEFOiA',
+  # Journey of Muziq Show #222
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlTaAXD3dK-BYkEYiPzVeWP',
+  # Plastikman   Hot Since 82
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznEgcX5rul02n0iVq4gQZSj',
+  # People's Republic Donetsk
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznPdUYXEheVMkOiV1KdSE2y',
+  # This is my mix [Compilation]
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznIx63JUUVyDlm_Q2_ByTS0',
+  # Cave Rave 2.0 [Compilation]
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzl4lAYLmuY21Tvb1xZ5P7m3',
+  # Daft Punk / FN / FT [Compilation]
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlT2vdPLhWZXqr0qpo1pVJM',
+  # Soft Cave Vibes [Compilation]
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlznkx2w1BetDgu9rRvCZuxBV',
+  # Techno Dump [Compliation]
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzmkgC9M0jK3NQ9lgmv2aaHA',
+  # Youtube Exclusive
+  #'https://www.youtube.com/playlist?list=PL9PJOAjeIlzlYVRf0mrU8eIhpKCzvy-Sf',
+  # NEW (House   Disco)
+  'https://www.youtube.com/playlist?list=PL9PJOAjeIlzms78e4rug4Ph2NWGewAVml',
+  # Transition
+  'https://www.youtube.com/playlist?list=PL9PJOAjeIlznzia9RVHQ-a0ZIug2lkvhx',
+  # Meme
+  'https://www.youtube.com/playlist?list=PL9PJOAjeIlzllNQuzU2ddVA4KRG2S4nNa'
+  # Daddy Horny Michael   Wild 94.9 Dance Party
+  'https://www.youtube.com/playlist?list=PL9PJOAjeIlzmpwDgGXF42AJaFJFZRMO4k',
+  # 90s Rave [Compilation]
+  'https://www.youtube.com/playlist?list=PL9PJOAjeIlzk1DUB0MhzVlN4nXuIRZs-2',
+]
+
+dl_ops = {
+  'outtmpl': 'YouTubeDL/%(playlist_title)s/%(title)s.%(ext)s',
+   '_format_selection_exts': 'mp3'
+}
+
+retry_count = 0
+
+def download_video(urls):
+  try:
+    with yt_dlp.YoutubeDL(dl_ops) as ydl:
+      ydl.download(urls)
+  except KeyboardInterrupt:
+    print('Interruptted by user')
+    sys.exit()
+  except Exception as e:
+    print(e)
+    global retry_count
+    if retry_count == 50:
+      print('Retry count exceeded')
+      #sys.exit()
+    retry_count += 1
+    download_video(urls)
+
+if __name__ == '__main__':
+  download_video(URLS)
