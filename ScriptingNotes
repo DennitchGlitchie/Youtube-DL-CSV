@@ -1,0 +1,14 @@
+for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp3"; done
+
+youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" <url to playlist>
+
+for d in [0-9][0-9][0-9]
+do
+    ( cd "$d" && your-command-here )
+done
+
+
+
+for dir in ~/projects/git/*; do (cd "$dir" && git pull); done
+
+for dir in ~/Desktop/SoilerWombIII/YouTubeDL/*; do (cd "$dir" && for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp3"; done); done
