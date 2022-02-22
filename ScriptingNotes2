@@ -15,31 +15,31 @@ To Download all compilations:
 
 #!/bin/bash
 cd ~/Desktop/TESTDOWNLOAD/Transition\ \[Compilation\]/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzlYPEuF4vV4dVSxm-VFpQJP
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzlYPEuF4vV4dVSxm-VFpQJP
 sleep 5
 cd ~/Desktop/TESTDOWNLOAD/NEW\ \(House\ \ \ Disco\)\ \[Compilation\]/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzlo0VKqmm3qVlgSvZAuwUhT
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzlo0VKqmm3qVlgSvZAuwUhT
 sleep 5
 cd ~/Desktop/TESTDOWNLOAD/Meme\ \[Compliation\]/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlznOl5I-Sqyc6BloMS724KF3
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlznOl5I-Sqyc6BloMS724KF3
 sleep 5
 cd ~/Desktop/TESTDOWNLOAD/Techno\ Dump\ \[Compilation\]/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzkjSSw8ATXcAM3-WFg_elqu
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzkjSSw8ATXcAM3-WFg_elqu
 sleep 5
 cd ~/Desktop/TESTDOWNLOAD/Soft\ Cave\ Vibes\ \[Compilation\]/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzkp9bll4SSf19-_XuV5fSQi
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzkp9bll4SSf19-_XuV5fSQi
 sleep 5
 cd ~/Desktop/TESTDOWNLOAD/90s\ Rave/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzmZB_3eJTWyCllGIMqaOfcn
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzmZB_3eJTWyCllGIMqaOfcn
 sleep 5
 cd ~/Desktop/TESTDOWNLOAD/Daft\ Punk\ \:\ FN\ \:\ FT\ \[Compilation\]/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzlcuoY8Koy7g-8WFfKNct9S
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzlcuoY8Koy7g-8WFfKNct9S
 sleep 5
 cd ~/Desktop/TESTDOWNLOAD/Cave\ Rave\ 2.0\ \[Compilation\]/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzmUV6g4J7VIeM02cLIIjWdj
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzmUV6g4J7VIeM02cLIIjWdj
 sleep 5
 cd ~/Desktop/TESTDOWNLOAD/This\ is\ my\ mix\ \[Compilation\]/
-sudo youtube-dl --extract-audio --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzlAfD9f3jgR4Zf-nQTGiadE
+sudo youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt https://www.youtube.com/playlist?list=PL9PJOAjeIlzlAfD9f3jgR4Zf-nQTGiadE
 sleep 5
 
 Current Script using python: 
