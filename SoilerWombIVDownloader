@@ -1,0 +1,86 @@
+#!/bin/bash
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV House [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV House [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlznZ6N3TjESk3pHiSVnbTwMt"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Requests and Meme [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Requests and Meme [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzl5pypwCj0xd_NjG2nxRj-u"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Progressive [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Progressive [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlznjfF8zv-0Ug7BfDomhCHhg"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Techno [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Techno [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzkhWLNDEAOY-YSuCrJ4aEoK"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Techno Dump [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Techno Dump [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzkjSSw8ATXcAM3-WFg_elqu"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Meme [Compliation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Meme [Compliation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlznOl5I-Sqyc6BloMS724KF3"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soft Cave Vibes [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soft Cave Vibes [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzkp9bll4SSf19-_XuV5fSQi"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/NEW (House   Disco) [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/NEW (House   Disco) [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzlo0VKqmm3qVlgSvZAuwUhT"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Transition [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Transition [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzlYPEuF4vV4dVSxm-VFpQJP"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/90s Rave [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/90s Rave [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzmZB_3eJTWyCllGIMqaOfcn"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Daft Punk / FN / FT [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Daft Punk / FN / FT [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzlcuoY8Koy7g-8WFfKNct9S"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Cave Rave 2.0 [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Cave Rave 2.0 [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzmUV6g4J7VIeM02cLIIjWdj"
+
+sleep 2
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/This is my mix [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/This is my mix [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzlAfD9f3jgR4Zf-nQTGiadE"
+
+
+# My Youtube Playlist URLs:
+# Soiler Womb IV Techno [Compilation]
+# https://www.youtube.com/playlist?list=PL9PJOAjeIlzkhWLNDEAOY-YSuCrJ4aEoK
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+# Playlist URLs from Colaborators:
+#
+#
+#
