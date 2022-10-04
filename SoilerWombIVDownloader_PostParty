@@ -1,26 +1,29 @@
 #!/bin/bash
+##########################
+# New Playlists
 
 sleep 2
-mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Progressive [Compilation]_alt'
-cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Progressive [Compilation]_alt'
-/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzmuuwFxOkifYzgntvgJzLgl"
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV House [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV House [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzlAMTvakabnwTNc00cD_S6v"
 
 sleep 2
-mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Techno [Compilation]_alt'
-cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Techno [Compilation]_alt'
-/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzkSLdbuwL8jzUbpatnbHy4k"
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Requests and Meme [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Requests and Meme [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzmQUw-lfGxbjhMcRFqVkrNq"
 
 sleep 2
-mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV House [Compilation]_alt'
-cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV House [Compilation]_alt'
-/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzm4tw9aNEre_0_0G8bJjiku"
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Progressive [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Progressive [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzlrSNdvG-kDaM2Vaq_6g8Zq"
 
 sleep 2
-mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Requests and Meme [Compilation]_alt'
-cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Requests and Meme [Compilation]_alt'
-/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzk-q4H2MudI3rFDA8P9vluB"
+mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Techno [Compilation]'
+cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Techno [Compilation]'
+/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzkmulluN2td4YojViRa4CJE"
 
 ######################
+# Other Playlists
 
 sleep 2
 mkdir '/Users/garges/Desktop/SOILERWOMBIV/Youtube Exclusive'
@@ -43,26 +46,7 @@ cd '/Users/garges/Desktop/SOILERWOMBIV/ELECTRO español [Hannah]'
 /usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PLYF002ywZd7YkgrG-wlq-f5veAwG3rnZG"
 
 ##########################
-
-sleep 2
-mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV House [Compilation]'
-cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV House [Compilation]'
-/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlznZ6N3TjESk3pHiSVnbTwMt"
-
-sleep 2
-mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Requests and Meme [Compilation]'
-cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Requests and Meme [Compilation]'
-/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzl5pypwCj0xd_NjG2nxRj-u"
-
-sleep 2
-mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Progressive [Compilation]'
-cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Progressive [Compilation]'
-/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlznjfF8zv-0Ug7BfDomhCHhg"
-
-sleep 2
-mkdir '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Techno [Compilation]'
-cd '/Users/garges/Desktop/SOILERWOMBIV/Soiler Womb IV Techno [Compilation]'
-/usr/local/bin/python3 /usr/local/bin/youtube-dl --extract-audio --rm-cache-dir --audio-format mp3 --download-archive archive.txt "https://www.youtube.com/playlist?list=PL9PJOAjeIlzkhWLNDEAOY-YSuCrJ4aEoK"
+# Backup Playlists
 
 sleep 2
 mkdir '/Users/garges/Desktop/SOILERWOMBIV/Techno Dump [Compilation]'
